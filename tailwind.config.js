@@ -6,6 +6,11 @@ module.exports = {
   purge: [],
   theme: {
     extend: {
+      colors: {
+        nav: {
+          100: '#826550'
+        }
+      },
       spacing: {
         '11': '2.25rem',
         '13': '3.5rem',

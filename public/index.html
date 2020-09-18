@@ -4,9 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <link rel="stylesheet" href="/public/style.css">
 </head>
 <body>
-    <h1 class="text-lg text-blue-900">Hallo</h1>
+    <div class="container max-w-sm my-4 mx-auto" style="outline: 1px solid yellow">
+        <header>
+            <div class="logo bg-black py-12 px-16">
+                <img src="../img/logotype-mobile-svg.png" alt="food-2" class="w-74 h-12 block sm:h-48">
+            </div>
+            <nav class="h-20 bg-nav-100 flex items-center">
+                <div class="text-white block w-full text-center uppercase font-semibold text-2xl" style="outline: 1px solid yellow">Главная</div>
+                <!-- <i class="fas fa-bars block h-20 w-30 bg-teal-600 text-white text-center cursor-pointer md:hidden" id="burger"></i> -->
+                <div class="block h-20 w-30 bg-teal-600 flex justify-center items-center">
+                    <img src="../img/menu-icon-svg.png" alt="food-2">
+                </div>
+            </nav>
+        </header>
+        <main>
+            <h1 class="text-4xl max-w-66 py-8 text-center leading-11 font-bold tracking-tighter uppercase">Стрижка у нас это выгодно!</h1>
+            <p class="text-xl text-center pb-4">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+            <div class="container">
+                <ul>
+                    <li class="flex h-32 bg-gray-800 justify-between items-center">
+                        <p class="text-white text-4xl font-bold ml-8">1 500 *</p>
+                        <p class="text-white text-xl mr-8 w-24 text-right" style="outline: 1px solid yellow">рублей вложений</p>
+                    </li>
+                    <li class="flex h-32 bg-gray-600 justify-between items-center">
+                        <p class="text-white text-4xl font-bold ml-8">7 200</p>
+                        <p class="text-white text-xl mr-8 w-43 text-right">секунд времени мастера</p>
+                    </li>
+                    <li class="flex h-32 bg-gray-800 justify-between items-center">
+                        <p class="text-white text-4xl font-bold ml-8">90 000</p>
+                        <p class="text-white text-xl mr-8 w-37 text-right">постриженных волос</p>
+                    </li>
+                    <li class="flex h-32 bg-gray-600 justify-between items-center">
+                        <p class="text-white text-4xl font-bold ml-8">500 000 *</p>
+                        <p class="text-white text-xl mr-8 w-37 text-right">лайков и комплиментов</p>
+                    </li>
+                </ul>
+                <section class="features bg-gray-800 min-h-0 flex flex-col items-center">
+                    <p class="text-xl pt-6 text-gray-400">* — приведённые данные ложь</p>
+                    <img class="h-38 w-38 mt-18 mb-13" src="../img/advantage-1-illustration-svg.png" alt="">
+                    <h2 class="text-white text-4xl font-bold uppercase">Быстро</h2>
+                    <p class="text-white text-2xl text-center px-8 tracking-tighter pb-13">Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки</p>
+                </section>
+                <section class="news">
+                    <h2 class="text-3xl text-center text-gray-900 uppercase font-bold py-8 tracking-tighter">Новости и акции</h2>
+                    <div class="flex mb-8">
+                        <div class="w-20 mx-8"></div>
+                        <p class="w-71">Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.</p>
+                    </div>
+                    <hr class="border mx-8">
+                    <div class="flex my-8">
+                        <div class="w-20 mx-8"></div>
+                        <p class="w-71">В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды. Спешите записаться!</p>
+                    </div>
+                    <a href="#" class="border text-gray-900 uppercase font-bold text-2xl text-center mb-12 py-8 block mx-8">показать все</a>
+                </section>
+                <hr class="border">
+                <section class="review flex flex-col items-center">
+                    <h2 class="text-gray-900 uppercase font-bold text-3xl my-8">Отзывы о нас</h2>
+                    <p class="text-gray-900 font-bold text-2xl mb-8">Трэвис Баркер</p>
+                    <p class="ml-38 w-60 mr-16 text-left mb-18">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+                </section>
+            </div>
+        </main>
+        <footer class="flex flex-col items-center bg-gray-900 text-white pt-18">
+            <p class="font-bold text-xl mb-4 w-89">Барбершоп Бородинский</p>
+            <p class="address w-69 text-xl text-center mb-4">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+            <a href="tel:+7812555-66-66" class="phone border block mx-8 py-5 px-16 text-xl font-bold">+7 (812) 555-66-66</a>
+            <ul class="social flex w-full mt-8">
+                <li class="border border-r-0 h-32 w-1/3 flex justify-center items-center">
+                    <i class="fab fa-vk fa-3x"></i>
+                </li>
+                <li class="border border-r-0 h-32 w-1/3 flex justify-center items-center">
+                    <i class="fab fa-facebook-f fa-3x"></i>
+                </li>
+                <li class="border h-32 w-1/3 flex justify-center items-center">
+                    <i class="fab fa-instagram fa-3x"></i>
+                </li>
+            </ul>
+            <p class="my-4 text-xl">Разработано:</p>
+            <div class="border block mx-8 py-5 px-16 text-xl font-bold mb-10">HTML ACADEMY</div>
+        </footer>
+    </div>
 </body>
 </html>
