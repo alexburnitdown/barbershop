@@ -9,7 +9,13 @@ module.exports = {
       colors: {
         nav: {
           100: '#826550'
-        }
+        },
+        burger: {
+          100: '#6a4d38'
+        },
+        popup_bg: {
+          100: '#f8f5f2'
+        },
       },
       spacing: {
         '11': '2.25rem',

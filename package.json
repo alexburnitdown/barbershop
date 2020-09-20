@@ -1,7 +1,6 @@
 {
-  "name": "tailwind_empty",
+  "name": "c",
   "version": "1.0.0",
-  "description": "",
   "main": "tailwind.config.js",
   "scripts": {
     "build-css": "tailwindcss build css/style.css -o public/style.css",
@@ -23,5 +22,7 @@
     "postcss": "^8.0.3",
     "postcss-cli": "^7.1.2",
     "tailwindcss": "^1.8.10"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }

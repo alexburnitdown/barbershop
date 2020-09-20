@@ -8,27 +8,59 @@
     <link rel="stylesheet" href="/public/style.css">
 </head>
 <body>
-    <div class="container max-w-sm my-4 mx-auto" style="outline: 1px solid yellow">
+    <div class="container max-w-sm mx-auto relative md:max-w-full" style="outline: 1px solid yellow">
         <header>
-            <div class="logo bg-black py-12 px-16">
+            <div class="logo bg-black py-12 px-16 md:hidden">
                 <img src="../img/logotype-mobile-svg.png" alt="food-2" class="w-74 h-12 block sm:h-48">
             </div>
-            <nav class="h-20 bg-nav-100 flex items-center">
-                <div class="text-white block w-full text-center uppercase font-semibold text-2xl" style="outline: 1px solid yellow">Главная</div>
+            <nav class="h-20 flex items-center md:hidden" style="outline: 1px solid red">
+                <div class="text-white block w-full text-center uppercase font-semibold h-full py-5 bg-nav-100 text-2xl">Главная</div>
                 <!-- <i class="fas fa-bars block h-20 w-30 bg-teal-600 text-white text-center cursor-pointer md:hidden" id="burger"></i> -->
-                <div class="block h-20 w-30 bg-teal-600 flex justify-center items-center">
+                <div class="block h-20 w-30 p-6 bg-burger-100 flex justify-center items-center">
                     <img src="../img/menu-icon-svg.png" alt="food-2">
                 </div>
+                <ul class="ml-auto w-65 hidden" style="outline: 1px solid red">
+                    <li class="block h-16 text-white uppercase text-xl shadow-inner font-bold bg-nav-100 pl-6 pt-4">Главная</li>
+                    <li class="block h-16 text-white uppercase text-xl shadow-inner font-bold bg-nav-100 pl-6 pt-4">Наши работы</li>
+                    <li class="block h-16 text-white uppercase text-xl shadow-inner font-bold bg-nav-100 pl-6 pt-4">Записаться</li>
+                    <li class="block h-16 text-white uppercase text-xl shadow-inner font-bold bg-nav-100 pl-6 pt-4">Контакты</li>
+                    <li class="block h-16 text-white uppercase text-xl shadow-inner font-bold bg-nav-100 pl-6 pt-4">HTML ACADEMY</li>
+                    <li class="block h-16 text-white uppercase text-xl shadow-inner font-bold bg-burger-100 pl-6 pt-4 flex text-gray-200">
+                        <img src="../img/login-svg.png" alt="food-2" class="mr-4 h-6">
+                        <p>Войти</p>
+                    </li>
+                </ul>
             </nav>
+            <nav class="flex hidden md:block" style="outline: 1px solid red">
+                <ul class="ml-auto w-full flex justify-center bg-gray-900 text-white uppercase" >
+                    <li class="block text-white uppercase text-xl shadow-inner font-bold pl-6 py-6 mr-13">Главная</li>
+                    <li class="block text-white uppercase text-xl shadow-inner font-bold pl-6 py-6 mr-13">Наши работы</li>
+                    <li class="block text-white uppercase text-xl shadow-inner font-bold pl-6 py-6 mr-13">Записаться</li>
+                    <li class="block text-white uppercase text-xl shadow-inner font-bold pl-6 py-6 mr-13">Контакты</li>
+                    <li class="block text-white uppercase text-xl shadow-inner font-bold pl-6 py-6 mr-13">HTML ACADEMY</li>
+                    <li class="block text-white uppercase text-xl shadow-inner font-bold pl-6 py-6 flex text-gray-200">
+                        <img src="../img/login-svg.png" alt="food-2" class="mr-4 h-6">
+                    </li>
+                </ul>
+            </nav>
+            
         </header>
         <main>
-            <h1 class="text-4xl max-w-66 py-8 text-center leading-11 font-bold tracking-tighter uppercase">Стрижка у нас это выгодно!</h1>
-            <p class="text-xl text-center pb-4">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+            <div class="px-28 hidden md:block" style="background: url(../img/md/back-tablet-jpg.jpg)">
+                <img src="../img/md/logotype-tablet-svg.png" alt="food-2" class="pt-13 pb-31 mx-auto">
+                <div class="flex bg-white pt-16 pl-16 pr-34">
+                    <div class="">
+                        <h1 class="text-4xl text-gray-900 max-w-66 text-left leading-11 mb-8 font-bold uppercase w-70">Стрижка у нас это выгодно!</h1>
+                        <p class="text-2xl text-gray-600 mb-8">* — приведённые данные ложь</p>
+                    </div>
+                    <p class="text-2xl text-gray-900 text-left w-70 ml-auto text-left">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+                </div>
+            </div>
             <div class="container">
                 <ul>
                     <li class="flex h-32 bg-gray-800 justify-between items-center">
                         <p class="text-white text-4xl font-bold ml-8">1 500 *</p>
-                        <p class="text-white text-xl mr-8 w-24 text-right" style="outline: 1px solid yellow">рублей вложений</p>
+                        <p class="text-white text-xl mr-8 w-24 text-right">рублей вложений</p>
                     </li>
                     <li class="flex h-32 bg-gray-600 justify-between items-center">
                         <p class="text-white text-4xl font-bold ml-8">7 200</p>
@@ -43,13 +75,35 @@
                         <p class="text-white text-xl mr-8 w-37 text-right">лайков и комплиментов</p>
                     </li>
                 </ul>
+                <section class="bg-popup_bg-100 px-8 shadow-md sticky top-0 hidden">
+                    <h2 class="text-3xl text-center text-gray-900 uppercase font-bold mt-8 mb-4">ЛИЧНЫЙ КАБИНЕТ</h2>
+                    <p class="text-base text-center text-gray-900 mb-4">Введите свой логин и пароль, чтобы войти</p>
+                    <input type="login" placeholder="Логин" class="border my-4 border-gray-500 placeholder-gray-800 h-16 w-full">
+                    <input type="password" placeholder="Пароль" class="border border-gray-500 placeholder-gray-800 h-16 w-full mb-8">
+                    <div class="flex">
+                        <div class="flex w-full items-center justify-between mb-8">
+                            <input type="checkbox" id="remember" class="w-8 h-8">
+                            <label for="remember">Запомните меня</label>
+                            <a href="#" class="forget">Я забыл пароль!</a>
+                        </div>
+                    </div>
+                    <div class="flex mb-10">
+                        <button type="button" class="block h-16 w-51 mr-8 text-lg text-center bg-nav-100 text-white uppercase font-bold">Войти</button>
+                        <button type="button" class="block h-16 w-51 border border-gray-500 text-lg text-center text-gray-900 uppercase font-bold">Закрыть</button>
+                    </div>
+                </section>
                 <section class="features bg-gray-800 min-h-0 flex flex-col items-center">
-                    <p class="text-xl pt-6 text-gray-400">* — приведённые данные ложь</p>
+                    <p class="text-xl pt-6 text-gray-400 hidden sm:block">* — приведённые данные ложь</p>
                     <img class="h-38 w-38 mt-18 mb-13" src="../img/advantage-1-illustration-svg.png" alt="">
                     <h2 class="text-white text-4xl font-bold uppercase">Быстро</h2>
                     <p class="text-white text-2xl text-center px-8 tracking-tighter pb-13">Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки</p>
+                    <ul class="flex mb-8">
+                        <li class="w-4 h-4 bg-white mr-4 transform rotate-45"></li>
+                        <li class="w-4 h-4 border mr-4 transform rotate-45"></li>
+                        <li class="w-4 h-4 border transform rotate-45"></li>
+                    </ul>
                 </section>
-                <section class="news">
+                <section class="news px-8">
                     <h2 class="text-3xl text-center text-gray-900 uppercase font-bold py-8 tracking-tighter">Новости и акции</h2>
                     <div class="flex mb-8">
                         <div class="w-20 mx-8"></div>
@@ -63,10 +117,20 @@
                     <a href="#" class="border text-gray-900 uppercase font-bold text-2xl text-center mb-12 py-8 block mx-8">показать все</a>
                 </section>
                 <hr class="border">
-                <section class="review flex flex-col items-center">
+                <section class="review flex flex-col items-center px-8">
                     <h2 class="text-gray-900 uppercase font-bold text-3xl my-8">Отзывы о нас</h2>
-                    <p class="text-gray-900 font-bold text-2xl mb-8">Трэвис Баркер</p>
-                    <p class="ml-38 w-60 mr-16 text-left mb-18">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+                    <div class="flex">
+                        <img class="block h-20 w-20 mr-8" src="../img/layer-36.png" alt="">
+                        <div>
+                            <p class="text-gray-900 font-bold text-2xl mb-8">Трэвис Баркер</p>
+                            <p class="block w-52 text-lg text-left mb-18 tracking-tighter">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+                        </div>
+                    </div>
+                    <ul class="flex mb-8">
+                        <li class="w-4 h-4 bg-gray-900 mr-4 transform rotate-45"></li>
+                        <li class="w-4 h-4 border-gray-900 border-2 mr-4 transform rotate-45"></li>
+                        <li class="w-4 h-4 border-gray-900 border-2 transform rotate-45"></li>
+                    </ul>
                 </section>
             </div>
         </main>
