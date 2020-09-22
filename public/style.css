@@ -614,6 +614,15 @@ video {
   }
 }
 
+.c-triangle-left {
+  width: 0;
+  height: 0;
+  border: 0;
+  border-right: 0.5em solid currentColor;
+  border-top: 0.5em solid transparent;
+  border-bottom: 0.5em solid transparent;
+}
+
 html{
   font-size: 10px;
 }
@@ -32467,6 +32476,15 @@ html{
     }
   }
 
+  .sm\:c-triangle-left {
+    width: 0;
+    height: 0;
+    border: 0;
+    border-right: 0.5em solid currentColor;
+    border-top: 0.5em solid transparent;
+    border-bottom: 0.5em solid transparent;
+  }
+
   .sm\:space-y-0 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--space-y-reverse)));
@@ -64249,6 +64267,15 @@ html{
     .md\:container {
       max-width: 1280px;
     }
+  }
+
+  .md\:c-triangle-left {
+    width: 0;
+    height: 0;
+    border: 0;
+    border-right: 0.5em solid currentColor;
+    border-top: 0.5em solid transparent;
+    border-bottom: 0.5em solid transparent;
   }
 
   .md\:space-y-0 > :not(template) ~ :not(template) {
@@ -96035,6 +96062,15 @@ html{
     }
   }
 
+  .lg\:c-triangle-left {
+    width: 0;
+    height: 0;
+    border: 0;
+    border-right: 0.5em solid currentColor;
+    border-top: 0.5em solid transparent;
+    border-bottom: 0.5em solid transparent;
+  }
+
   .lg\:space-y-0 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--space-y-reverse)));
@@ -127817,6 +127853,15 @@ html{
     .xl\:container {
       max-width: 1280px;
     }
+  }
+
+  .xl\:c-triangle-left {
+    width: 0;
+    height: 0;
+    border: 0;
+    border-right: 0.5em solid currentColor;
+    border-top: 0.5em solid transparent;
+    border-bottom: 0.5em solid transparent;
   }
 
   .xl\:space-y-0 > :not(template) ~ :not(template) {
