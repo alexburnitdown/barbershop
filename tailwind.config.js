@@ -17,6 +17,13 @@ module.exports = {
           100: '#f8f5f2'
         },
       },
+      inset: {
+        '1/2': '50%',
+      },
+      boxShadow: {
+        '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
+        '4xl': '0 45px 70px -18px rgba(0, 0, 0, 0.35)',
+      },
       spacing: {
         '11': '2.25rem',
         '13': '3.5rem',
@@ -86,6 +93,18 @@ module.exports = {
         height: '0.5em',        // defaults to half the size; has no effect on the diagonal directions (e.g. 'left-up')
         color: 'currentColor',  // defaults to defaultColor
       },
+      'left-10-5': {
+        direction: 'left',      // one of 'left', 'right', 'up', 'down', 'left-up', 'left-down', 'right-up', and 'right-down'
+        size: '10em',            // defaults to defaultSize
+        height: '5em',        // defaults to half the size; has no effect on the diagonal directions (e.g. 'left-up')
+        color: 'currentColor',  // defaults to defaultColor
+      },
+      'left-10-3': {
+        direction: 'left',      // one of 'left', 'right', 'up', 'down', 'left-up', 'left-down', 'right-up', and 'right-down'
+        size: '10em',            // defaults to defaultSize
+        height: '3em',        // defaults to half the size; has no effect on the diagonal directions (e.g. 'left-up')
+        color: 'currentColor',  // defaults to defaultColor
+      },
     },
   },
   variants: {
@@ -95,7 +114,7 @@ module.exports = {
   plugins: [
     require('tailwindcss-triangles')({
       componentPrefix: 'c-',        // defaults to 'c-'
-      defaultSize: '1em',           // defaults to '1em'
+      defaultSize: ['1em', '10em'],          // defaults to '1em'
       defaultColor: 'currentColor', // defaults to 'currentColor'
     }),
   ],

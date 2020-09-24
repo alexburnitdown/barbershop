@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <link rel="stylesheet" href="/public/style.css">
 </head>
-<body>
+<body class="relative">
     <div class="container max-w-full mx-auto relative md:max-w-full">
         <header>
             <div class="logo bg-black py-12 px-16 md:hidden">
@@ -19,7 +19,7 @@
                 <div class="block h-20 w-30 p-6 bg-burger-100 flex justify-center items-center">
                     <img src="../img/menu-icon-svg.png" alt="food-2">
                 </div>
-                <ul class="ml-auto w-65 hidden">
+                <ul class="mobile-drop-menu ml-auto w-65 hidden">
                     <li class="block h-16 text-white uppercase text-xl shadow-inner font-bold bg-nav-100 pl-6 pt-4"><a href="#">Главная</a></li>
                     <li class="block h-16 text-white uppercase text-xl shadow-inner font-bold bg-nav-100 pl-6 pt-4"><a href="#">Наши работы</a></li>
                     <li class="block h-16 text-white uppercase text-xl shadow-inner font-bold bg-nav-100 pl-6 pt-4"><a href="#">Записаться</a></li>
@@ -61,14 +61,14 @@
                 <div class="px-28 hidden lg:block" style="background: url(../img/lg/back-desktop-jpg.png)">
                     <img src="../img/lg/logotype-desktop-svg.png" alt="food-2" class="pt-13 pb-31 mx-auto">
                     <div class="top-blocks lg:flex">
-                        <div class="bg-white text-gray-900 pl-16 w-82 pr-28 w-90">
+                        <div class="bg-white text-gray-900 pl-16 w-82 pr-28 lg:w-1/3">
                             <h1 class="text-4xl text-gray-900  text-left leading-11 mb-8 font-bold uppercase mt-16 w-71">Стрижка у нас это выгодно!</h1>
                         </div>
-                        <div class="flex py-8 bg-gray-800 justify-between md:flex-col md:w-1/2 md:pt-12 md:pb-16 md:pl-12 md:bg-gray-700">
+                        <div class="flex py-8 bg-gray-800 justify-between md:flex-col md:w-1/2 md:pt-12 md:pb-16 md:pl-12 lg:w-1/3 md:bg-gray-700">
                             <p class="text-white text-4xl font-bold ml-8 md:text-6xl md:ml-0">1 500 *</p>
                             <p class="text-white text-xl text-right mr-8 w-24 md:w-48 md:text-left">рублей вложений</p>
                         </div>
-                        <div class="flex py-8 bg-gray-600 justify-between md:flex-col md:w-1/2 md:pt-12 md:pb-16 md:pl-12">
+                        <div class="flex py-8 bg-gray-500 justify-between md:flex-col md:w-1/2 md:pt-12 md:pb-16 md:pl-12 lg:w-1/3">
                             <p class="text-white text-4xl font-bold ml-8 md:ml-0 md:text-6xl">7 200</p>
                             <p class="text-white text-xl mr-8 w-43 text-right md:w-65 md:text-left">секунд времени мастера</p>
                         </div>
@@ -77,15 +77,15 @@
 
                 
                 <div class="bottom-blocks hidden lg:flex lg:px-28">
-                    <div class="bg-white text-gray-900 pl-16 pr-28 w-90">
+                    <div class="bg-white text-gray-900 pl-16 pr-28 w-1/3">
                         <p class="text-3xl text-gray-900 text-left mb-8">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
                         <p class="text-2xl text-gray-600 mb-8">* — приведённые данные ложь</p>
                     </div>
-                    <div class="flex py-8 bg-gray-800 justify-between md:flex-col md:w-1/2 md:pt-12 md:pb-16 md:pl-12">
+                    <div class="flex flex-col py-8 bg-gray-800 justify-between md:pt-12 md:pl-12 md:pb-16 md:bg-gray-600 lg:w-1/3">
                         <p class="text-white text-4xl font-bold ml-8 md:ml-0 md:text-6xl">90 000</p>
                         <p class="text-white text-xl mr-8 w-37 text-right md:w-65 md:text-left">постриженных волос</p>
                     </div>
-                    <div class="flex py-8 bg-gray-600 justify-between md:flex-col md:w-1/2 md:pt-12 md:pl-12 md:pb-16 md:bg-gray-700">
+                    <div class="flex py-8 bg-gray-600 justify-between md:flex-col md:w-1/2 md:pt-12 md:pl-12 md:pb-16 md:bg-gray-700 lg:w-1/3">
                         <p class="text-white text-4xl font-bold ml-8 md:ml-0 md:text-6xl">500 000 *</p>
                         <p class="text-white text-xl mr-8 w-37 text-right md:w-65 md:text-left">лайков и комплиментов</p>
                     </div>
@@ -109,23 +109,7 @@
                         <p class="text-white text-xl mr-8 w-37 text-right md:w-65 md:text-left">лайков и комплиментов</p>
                     </li>
                 </ul>
-                <section class="bg-popup_bg-100 px-8 shadow-md sticky top-0 hidden">
-                    <h2 class="text-3xl text-center text-gray-900 uppercase font-bold mt-8 mb-4">ЛИЧНЫЙ КАБИНЕТ</h2>
-                    <p class="text-base text-center text-gray-900 mb-4">Введите свой логин и пароль, чтобы войти</p>
-                    <input type="login" placeholder="Логин" class="border my-4 border-gray-500 placeholder-gray-800 h-16 w-full">
-                    <input type="password" placeholder="Пароль" class="border border-gray-500 placeholder-gray-800 h-16 w-full mb-8">
-                    <div class="flex">
-                        <div class="flex w-full items-center justify-between mb-8">
-                            <input type="checkbox" id="remember" class="w-8 h-8">
-                            <label for="remember">Запомните меня</label>
-                            <a href="#" class="forget">Я забыл пароль!</a>
-                        </div>
-                    </div>
-                    <div class="flex mb-10">
-                        <button type="button" class="block h-16 w-51 mr-8 text-lg text-center bg-nav-100 text-white uppercase font-bold">Войти</button>
-                        <button type="button" class="block h-16 w-51 border border-gray-500 text-lg text-center text-gray-900 uppercase font-bold">Закрыть</button>
-                    </div>
-                </section>
+                
                 <section class="features bg-gray-800 min-h-0 flex flex-col items-center md:hidden">
                     <p class="text-xl pt-6 text-gray-400 sm:block md:hidden">* — приведённые данные ложь</p>
                     <div class="flex flex-col items-center">
@@ -141,33 +125,34 @@
                         <li class="w-4 h-4 border transform rotate-45"></li>
                     </ul>
                 </section>
-                <section class="features pl-12 pr-12 hidden md:block md:mt-18 md:pb-20 lg:flex lg:px-28" >
-                    <div class="flex items-center lg:w-1/3 lg:flex-col lg:text-center">
-                        <img class="h-38 w-38 mb-13 mr-12" src="../img/md/advantage-1-illustration-svg.png" alt="">
+                <section class="features pl-12 pr-12 hidden md:block md:mt-18 md:pb-20 lg:flex lg:px-28 lg:relative" >
+                    <div class="flex items-center lg:w-1/3 lg:flex-col lg:text-center lg:border-r-2 lg:border-gray-600">
+                        <img class="h-38 w-38 mb-13 mr-12 lg:ml-12" src="../img/md/advantage-1-illustration-svg.png" alt="">
                         <div class="">
                             <h2 class="text-white text-4xl font-bold uppercase lg:pb-4">Быстро</h2>
-                            <p class="text-white text-3xl tracking-tighter pb-13 lg:px-10">
+                            <p class="text-white text-3xl tracking-tighter pb-13 lg:w-82">
                                 Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки
                             </p>
                         </div>
                     </div>
                     <hr class="border border-gray-600 mb-12">
                     
-                    <div class="flex items-center lg:w-1/3 lg:flex-col lg:text-center">
-                        <img class="h-38 w-38 mb-13 mr-12" src="../img/md/advantage-2-illustration-svg.png" alt="">
+                    <div class="flex items-center lg:w-1/3 lg:flex-col lg:text-center lg:border-r-2 lg:border-gray-600"">
+                        <img class="h-38 w-38 mb-13 mr-12 lg:ml-12" src="../img/md/advantage-2-illustration-svg.png" alt="">
                         <div class="">
                             <h2 class="text-white text-4xl font-bold uppercase lg:pb-4">КРУТО</h2>
-                            <p class="text-white text-3xl tracking-tighter pb-13 lg:px-10">
+                            <p class="text-white text-3xl tracking-tighter pb-13 lg:w-84">
                                 Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.
                             </p>
                         </div>
                     </div> 
                     <hr class="border border-gray-600 mb-12">
+                    
                     <div class="flex items-center lg:w-1/3 lg:flex-col lg:text-center">
-                        <img class="h-38 w-38 mb-13 mr-12" src="../img/md/advantage-3-illustration-svg.png" alt="">
+                        <img class="h-38 w-38 mb-13 mr-12 lg:ml-12" src="../img/md/advantage-3-illustration-svg.png" alt="">
                         <div class="">
                             <h2 class="text-white text-4xl font-bold uppercase lg:pb-4">ДОРОГО</h2>
-                            <p class="text-white text-3xl tracking-tighter pb-13 lg:px-10">
+                            <p class="text-white text-3xl tracking-tighter pb-13 lg:w-84">
                                 Наши мастера — профессионалы своего делаи не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?
                             </p>
                         </div>
@@ -180,27 +165,38 @@
                         <h2 class="text-3xl md:text-6xl text-center text-gray-900 uppercase font-bold py-8 md:py-0 tracking-tighter">Новости и акции</h2>
                         <a href="#" class="border text-gray-900 uppercase font-bold text-2xl text-center mb-12 py-8 hidden md:block md:px-8">показать все</a>
                     </div>
-                    <div class="md:flex md:items-center lg:items-start ">
-                        <div class="flex mb-8 md:pr-12 md:ml-20 lg:w-1/3 lg:ml-0 ">
+                    <div class="md:flex md:items-center lg:items-start">
+                        <div class="flex mb-8 md:pr-12 md:ml-20 lg:w-1/3 lg:ml-0 relative">
+                            <div class="flex flex-col justify-start">
                             <div class="w-28 h-20 mr-8 border border-red-500 bg-blue-900 text-white flex flex-col items-center justify-center">
                                 <p class="text-4xl font-semibold">29</p>
                                 <p class="text-xl">сент</p>
-                                <div class="c-triangle-left"></div>
+                                
                             </div>
+                            <div class="text-blue-900 transform -rotate-90 absolute mt-12" style="margin-top: 24px;font-size: 6.75px;margin-left: 22px;">
+                                <div class="c-triangle-left-10-3"></div>
+                            </div>
+                        </div>
                             <p class="w-71 md:text-xl">Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.</p>
                         </div>
                         <hr class="border mx-8">
-                        <div class="flex my-8 lg:my-0 lg:pr-12 lg:w-1/3">
+                        <div class="flex my-8 lg:my-0 lg:pr-12 lg:w-1/3 relative">
                             <div class="w-28 h-20 mr-8 border border-red-500 bg-blue-900 text-white flex flex-col items-center justify-center">
                                 <p class="text-4xl font-semibold">19</p>
                                 <p class="text-xl">сент</p>
                             </div>
+                            <div class="text-blue-900 transform -rotate-90 absolute mt-12" style="margin-top: 24px;font-size: 6.75px;margin-left: 22px;">
+                                <div class="c-triangle-left-10-3"></div>
+                            </div>
                             <p class="w-71 md:text-xl">В нашей команде пополнение, Борис «Бритва» Стригунец, <span class="md:hidden">обладатель множества титулов и наград</span> пополнил наши стройные ряды. Спешите записаться!</p>
                         </div>
-                        <div class="hidden  lg:flex lg:w-1/3">
+                        <div class="hidden  lg:flex lg:w-1/3 relative">
                             <div class="w-28 px-8 h-20 mr-8 border border-red-500 bg-blue-900 text-white flex flex-col items-center justify-center">
                                 <p class="text-4xl font-semibold">9</p>
                                 <p class="text-xl">сент</p>
+                            </div>
+                            <div class="text-blue-900 transform -rotate-90 absolute " style="margin-top: 24px;font-size: 6.75px;margin-left: 22px;">
+                                <div class="c-triangle-left-10-3"></div>
                             </div>
                             <p class="text-xl">Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!</p>
                         </div>
@@ -289,5 +285,35 @@
             </div>
         </footer>
     </div>
+    <div class="bg-popup_bg-100 px-28 pt-20 pb-16 shadow-2xl top-0 hidden md:flex-col md:items-center md:w-90 fixed top-1/2 left-1/2 -ml-79 -mt-69">
+        <h2 class="text-3xl text-center text-gray-900 uppercase font-bold mt-8 mb-4">ЛИЧНЫЙ КАБИНЕТ</h2>
+        <p class="text-base text-center text-gray-900 mb-4">Введите свой логин и пароль, чтобы войти</p>
+        <input type="login" placeholder="Логин" class="border my-4 border-gray-500 placeholder-gray-800 h-16 w-full">
+        <input type="password" placeholder="Пароль" class="border border-gray-500 placeholder-gray-800 h-16 w-full mb-8">
+            <div class="flex w-full items-center justify-between mb-8">
+                <div class="">
+                    <input type="checkbox" id="remember" class="w-8 h-8">
+                    <label for="remember">Запомните меня</label>
+                </div>
+                <a href="#" class="forget">Я забыл пароль!</a>
+            </div>
+        <div class="flex mb-10">
+            <button type="button" class="block h-16 w-51 mr-8 text-lg text-center bg-nav-100 text-white uppercase font-bold">Войти</button>
+            <button type="button" class="block h-16 w-51 border border-gray-500 text-lg text-center text-gray-900 uppercase font-bold">Закрыть</button>
+        </div>
+    </div>
+    <div class="popup_error w-85 bg-white px-36 py-21 shadow-2xl hidden md:flex-col md:items-center fixed top-1/2 left-1/2 -ml-65 -mt-56">
+        <h2 class="text-4xl font-bold pb-8">НЕУДАЧА</h2>
+        <p class="text-xl pb-12 text-center">Что-то пошло не так. Проверьте выделенные красным поля формы.</p>
+        <button type="button" class="block h-16 w-51 mr-8 text-lg text-center bg-nav-100 text-white uppercase font-bold">ok</button>
+    </div>
+    <div class="popup_success shadow-4xl bg-white w-90 px-28 pb-20 pt-24 hidden md:flex-col md:items-center fixed top-1/2 left-1/2 -ml-79 -mt-56">
+        <h2 class="text-4xl font-bold pb-8">ЭТО УСПЕХ!</h2>
+        <p class="text-xl pb-12 text-center">Ваша заявка отправлена. 
+        Ожидайте, мы свяжемся с вами как только 
+        будет минутка.</p>
+        <button type="button" class="block h-16 w-full mr-8 text-lg text-center bg-nav-100 text-white uppercase font-bold">ЗАКРЫТЬ ОКНО</button>
+    </div>
 </body>
+
 </html>
