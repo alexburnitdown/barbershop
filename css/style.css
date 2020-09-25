@@ -6,4 +6,14 @@ html{
     font-size: 10px;
 }
 
+.item_menu:hover {
+    @apply bg-green-200 text-gray-800;
+}
+
+.modal_error {
+    animation-name: shake;
+    animation-duration: 0.3s;
+    outline: 2px solid red;
+}
+
 @tailwind utilities;
