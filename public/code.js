@@ -25,7 +25,7 @@ login_button.addEventListener('click', (evt)=>{
 
 burger.addEventListener('click', (evt)=>{
     evt.preventDefault();
-    drop_menu.classList.remove('hidden');
+    mobile_menu.classList.remove('hidden');
     burger.classList.add('hidden');
 });
 
@@ -77,3 +77,23 @@ window.addEventListener("keydown", function(evt) {
     mobile_cross.classList.add("hidden");
     burger.classList.remove("hidden");
   });
+
+  const tabs = document.querySelectorAll('[data-tab-target]');
+  const tabContents = document.querySelectorAll('[data-tab-content]');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        console.log('111');
+      const target = document.querySelector(tab.dataset.tabTarget)
+      tabContents.forEach(tabContent => {
+        tabContent.classList.remove('active');
+      })
+      tabs.forEach(tab => {
+        tab.classList.remove('active');
+        tab.classList.remove('bg-white');
+      })
+      tab.classList.add('active');
+      tab.classList.add('bg-white');
+      target.classList.add('active');
+    })
+  })

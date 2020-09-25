@@ -10,10 +10,12 @@ html{
     @apply bg-green-200 text-gray-800;
 }
 
-.modal_error {
-    animation-name: shake;
-    animation-duration: 0.3s;
-    outline: 2px solid red;
+@tailwind utilities;
+
+[data-tab-content] {
+    display: none;
 }
 
-@tailwind utilities;
+.active[data-tab-content] {
+    display: block;
+}
